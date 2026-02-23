@@ -1,0 +1,313 @@
+/* Reset và font chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff8f0;
+    /* Kem nhạt */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header với hình nền hoa đào nhẹ (tùy chọn, em comment nếu không thích) */
+header {
+    background: linear-gradient(rgba(149, 15, 24, 0.742), rgba(173, 19, 29, 0.381)), url('https://vienchibao.com/wp-content/uploads/2021/01/Y-Nghia-Va-Ve-Dep-Tinh-Te-Cua-Cay-Hoa-Dao-Ngay-Tet-2.jpg') center/cover no-repeat;
+    color: #fdfdfd;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 4em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+header p {
+    font-size: 1.8em;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+/* Nav */
+nav {
+    background-color: #a1141f;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0 25px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 215, 0, 0.3);
+}
+
+.container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+section h2 {
+    text-align: center;
+    color: #c41e2a;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #ffd700;
+    margin: 20px auto 0;
+}
+
+/* Giới thiệu - thêm hình */
+#gioi-thieu .intro-img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#gioi-thieu img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+#gioi-thieu p {
+    font-size: 1.3em;
+    text-align: justify;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Phong tục - card có hình trên đầu */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 350px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    background: #c41e2a;
+    color: #ffd700;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.card p {
+    padding: 25px;
+    text-align: justify;
+}
+
+/* Ẩm thực - grid có hình */
+.am-thuc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.mon-an {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.mon-an img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.mon-an h3 {
+    background: #a1141f;
+    color: #ffd700;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.mon-an p {
+    padding: 25px;
+}
+
+/* Ý nghĩa - thêm hình đoàn viên */
+/* Section Ý nghĩa - Thiết kế mới đẹp hơn */
+#y-nghia .meaning-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    margin: 40px auto;
+    max-width: 1000px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s;
+}
+
+#y-nghia .meaning-card:hover {
+    transform: translateY(-10px);
+}
+
+#y-nghia .meaning-card img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#y-nghia .meaning-text {
+    width: 55%;
+    padding: 40px;
+}
+
+#y-nghia .meaning-text h3 {
+    color: #c41e2a;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+#y-nghia .meaning-text p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+/* Hình cuối section */
+#y-nghia .meaning-final-img {
+    text-align: center;
+    margin: 60px auto 20px;
+}
+
+#y-nghia .meaning-final-img img {
+    max-width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    #y-nghia .meaning-card {
+        flex-direction: column;
+    }
+
+    #y-nghia .meaning-card img {
+        width: 100%;
+        height: 250px;
+    }
+
+    #y_nghia .meaning-text {
+        width: 100%;
+        padding: 25px;
+    }
+}
+
+/* Footer */
+footer {
+    background: #a1141f;
+    color: #ffd700;
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    nav a {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .card-container,
+    .am-thuc-grid {
+        gap: 30px;
+    }
+}
+
+/* Video kết section - Responsive đẹp, bo góc, đổ bóng */
+#y-nghia .meaning-final-video {
+    text-align: center;
+    margin: 60px auto 20px;
+    max-width: 1000px;
+}
+
+#y-nghia .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* Tỷ lệ 16:9 chuẩn YouTube */
+    height: 0;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+#y-nghia .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#y-nghia .video-caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: #c41e2a;
+    font-size: 1.1em;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    #y-nghia .video-wrapper {
+        padding-bottom: 60%;
+        /* Điều chỉnh nhẹ cho mobile */
+    }
+}
